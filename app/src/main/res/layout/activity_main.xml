@@ -12,13 +12,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:letterSpacing=".4"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp"
+        android:letterSpacing=".2"
         android:text="Welcome"
-        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="50dp"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,48 +26,42 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="350sp"
-        android:layout_height="200sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        android:background="#FFA500"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:src="@drawable/imag"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/boxdesign"
-        android:ems="9"
-        android:inputType="text"
-
-        android:letterSpacing=".1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttondesign1"
         android:text="Login"
-        android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textColor="#FFA500"
         android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/boxdesign2"
-        android:ems="9"
-        android:inputType="text"
-        android:letterSpacing=".1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
         android:text="Sign Up"
-        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        android:background="@drawable/buttondesign"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
