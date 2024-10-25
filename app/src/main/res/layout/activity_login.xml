@@ -38,7 +38,7 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/boxdesign"
         android:paddingHorizontal="15dp"
-        android:text="UserName"
+        android:hint="UserName"
         app:layout_constraintBottom_toTopOf="@+id/editText5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,9 +50,9 @@
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="164dp"
         android:background="@drawable/boxdesign"
-        android:hint="textPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:paddingHorizontal="15dp"
-        android:text="Password"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -62,7 +62,6 @@
         android:id="@+id/checkedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="Forget your password?"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
